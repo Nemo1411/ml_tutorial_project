@@ -7,12 +7,10 @@ This repository contains a Jupyter notebook that implements a machine learning m
 ### Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
 - [Data](#data)
-- [Model Training](#model-training)
+- [Modeling](#modeling)
 - [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ### Installation
 
@@ -28,3 +26,42 @@ You can install the required libraries using pip:
 
 ```bash
 pip install pandas numpy matplotlib scikit-learn tensorflow
+```
+
+### Data
+The dataset used in this project is melb_data.csv, which contains the following columns:
+
+-Suburb
+-Address
+-Rooms
+-Type (house or unit)
+-Price
+-Method of sale
+-Seller
+-Date of sale
+-Distance from the city
+-Postcode
+-Number of bedrooms
+-Number of bathrooms
+-Number of car spaces
+-Landsize
+-Building area
+-Year built
+-Council area
+-Latitude
+-Longitude
+-Region name
+-Property count
+
+
+### Modeling
+The project utilizes various machine learning models to predict house prices, including:
+
+Linear Regression
+Decision Trees
+Support Vector Regression (SVR)
+Neural Networks
+The models are evaluated based on their Mean Absolute Error (MAE) and other relevant metrics.
+
+### Results
+The results of the model training and evaluation are visualized using Matplotlib and Seaborn. The performance of each model is compared to determine the best approach for predicting house prices.
